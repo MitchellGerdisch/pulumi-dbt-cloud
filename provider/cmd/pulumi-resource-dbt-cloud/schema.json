@@ -108,5 +108,1808 @@
             "accountId",
             "token"
         ]
+    },
+    "resources": {
+        "dbtcloud:index/connection:Connection": {
+            "properties": {
+                "account": {
+                    "type": "string",
+                    "description": "Account name for the connection\n"
+                },
+                "allowKeepAlive": {
+                    "type": "boolean",
+                    "description": "Whether or not the connection should allow client session keep alive\n"
+                },
+                "allowSso": {
+                    "type": "boolean",
+                    "description": "Whether or not the connection should allow SSO\n"
+                },
+                "connectionId": {
+                    "type": "integer",
+                    "description": "Connection Identifier\n"
+                },
+                "database": {
+                    "type": "string",
+                    "description": "Database name for the connection\n"
+                },
+                "hostName": {
+                    "type": "string",
+                    "description": "Host name for the connection\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the connection is active\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Connection name\n"
+                },
+                "oauthClientId": {
+                    "type": "string",
+                    "description": "OAuth client identifier\n"
+                },
+                "oauthClientSecret": {
+                    "type": "string",
+                    "description": "OAuth client secret\n"
+                },
+                "port": {
+                    "type": "integer",
+                    "description": "Port number to connect via\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the connection in\n"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role name for the connection\n"
+                },
+                "tunnelEnabled": {
+                    "type": "boolean",
+                    "description": "Whether or not tunneling should be enabled on your database connection\n"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of connection\n"
+                },
+                "warehouse": {
+                    "type": "string",
+                    "description": "Warehouse name for the connection\n"
+                }
+            },
+            "required": [
+                "connectionId",
+                "database",
+                "name",
+                "projectId",
+                "type"
+            ],
+            "inputProperties": {
+                "account": {
+                    "type": "string",
+                    "description": "Account name for the connection\n"
+                },
+                "allowKeepAlive": {
+                    "type": "boolean",
+                    "description": "Whether or not the connection should allow client session keep alive\n"
+                },
+                "allowSso": {
+                    "type": "boolean",
+                    "description": "Whether or not the connection should allow SSO\n"
+                },
+                "database": {
+                    "type": "string",
+                    "description": "Database name for the connection\n"
+                },
+                "hostName": {
+                    "type": "string",
+                    "description": "Host name for the connection\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the connection is active\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Connection name\n"
+                },
+                "oauthClientId": {
+                    "type": "string",
+                    "description": "OAuth client identifier\n"
+                },
+                "oauthClientSecret": {
+                    "type": "string",
+                    "description": "OAuth client secret\n"
+                },
+                "port": {
+                    "type": "integer",
+                    "description": "Port number to connect via\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the connection in\n"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role name for the connection\n"
+                },
+                "tunnelEnabled": {
+                    "type": "boolean",
+                    "description": "Whether or not tunneling should be enabled on your database connection\n"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of connection\n"
+                },
+                "warehouse": {
+                    "type": "string",
+                    "description": "Warehouse name for the connection\n"
+                }
+            },
+            "requiredInputs": [
+                "database",
+                "projectId",
+                "type"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering Connection resources.\n",
+                "properties": {
+                    "account": {
+                        "type": "string",
+                        "description": "Account name for the connection\n"
+                    },
+                    "allowKeepAlive": {
+                        "type": "boolean",
+                        "description": "Whether or not the connection should allow client session keep alive\n"
+                    },
+                    "allowSso": {
+                        "type": "boolean",
+                        "description": "Whether or not the connection should allow SSO\n"
+                    },
+                    "connectionId": {
+                        "type": "integer",
+                        "description": "Connection Identifier\n"
+                    },
+                    "database": {
+                        "type": "string",
+                        "description": "Database name for the connection\n"
+                    },
+                    "hostName": {
+                        "type": "string",
+                        "description": "Host name for the connection\n"
+                    },
+                    "isActive": {
+                        "type": "boolean",
+                        "description": "Whether the connection is active\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Connection name\n"
+                    },
+                    "oauthClientId": {
+                        "type": "string",
+                        "description": "OAuth client identifier\n"
+                    },
+                    "oauthClientSecret": {
+                        "type": "string",
+                        "description": "OAuth client secret\n"
+                    },
+                    "port": {
+                        "type": "integer",
+                        "description": "Port number to connect via\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID to create the connection in\n"
+                    },
+                    "role": {
+                        "type": "string",
+                        "description": "Role name for the connection\n"
+                    },
+                    "tunnelEnabled": {
+                        "type": "boolean",
+                        "description": "Whether or not tunneling should be enabled on your database connection\n"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "The type of connection\n"
+                    },
+                    "warehouse": {
+                        "type": "string",
+                        "description": "Warehouse name for the connection\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/databricksCredential:DatabricksCredential": {
+            "properties": {
+                "adapterId": {
+                    "type": "integer",
+                    "description": "Databricks adapter ID for the credential\n"
+                },
+                "credentialId": {
+                    "type": "integer",
+                    "description": "The system Databricks credential ID\n"
+                },
+                "numThreads": {
+                    "type": "integer",
+                    "description": "Number of threads to use\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the Databricks credential in\n"
+                },
+                "targetName": {
+                    "type": "string",
+                    "description": "Target name\n"
+                },
+                "token": {
+                    "type": "string",
+                    "description": "Token for Databricks user\n"
+                }
+            },
+            "required": [
+                "adapterId",
+                "credentialId",
+                "numThreads",
+                "projectId",
+                "targetName",
+                "token"
+            ],
+            "inputProperties": {
+                "adapterId": {
+                    "type": "integer",
+                    "description": "Databricks adapter ID for the credential\n"
+                },
+                "numThreads": {
+                    "type": "integer",
+                    "description": "Number of threads to use\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the Databricks credential in\n"
+                },
+                "targetName": {
+                    "type": "string",
+                    "description": "Target name\n"
+                },
+                "token": {
+                    "type": "string",
+                    "description": "Token for Databricks user\n"
+                }
+            },
+            "requiredInputs": [
+                "adapterId",
+                "numThreads",
+                "projectId",
+                "targetName",
+                "token"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering DatabricksCredential resources.\n",
+                "properties": {
+                    "adapterId": {
+                        "type": "integer",
+                        "description": "Databricks adapter ID for the credential\n"
+                    },
+                    "credentialId": {
+                        "type": "integer",
+                        "description": "The system Databricks credential ID\n"
+                    },
+                    "numThreads": {
+                        "type": "integer",
+                        "description": "Number of threads to use\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID to create the Databricks credential in\n"
+                    },
+                    "targetName": {
+                        "type": "string",
+                        "description": "Target name\n"
+                    },
+                    "token": {
+                        "type": "string",
+                        "description": "Token for Databricks user\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/environment:Environment": {
+            "properties": {
+                "credentialId": {
+                    "type": "integer",
+                    "description": "Credential ID to create the environment with\n"
+                },
+                "customBranch": {
+                    "type": "string",
+                    "description": "Which custom branch to use in this environment\n"
+                },
+                "dbtVersion": {
+                    "type": "string",
+                    "description": "Version number of dbt to use in this environment\n"
+                },
+                "environmentId": {
+                    "type": "integer",
+                    "description": "Environment ID within the project\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the environment is active\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Environment name\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the environment in\n"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of environment (must be either development or deployment)\n"
+                },
+                "useCustomBranch": {
+                    "type": "boolean",
+                    "description": "Whether to use a custom git branch in this environment\n"
+                }
+            },
+            "required": [
+                "dbtVersion",
+                "environmentId",
+                "name",
+                "projectId",
+                "type"
+            ],
+            "inputProperties": {
+                "credentialId": {
+                    "type": "integer",
+                    "description": "Credential ID to create the environment with\n"
+                },
+                "customBranch": {
+                    "type": "string",
+                    "description": "Which custom branch to use in this environment\n"
+                },
+                "dbtVersion": {
+                    "type": "string",
+                    "description": "Version number of dbt to use in this environment\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the environment is active\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Environment name\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the environment in\n"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "The type of environment (must be either development or deployment)\n"
+                },
+                "useCustomBranch": {
+                    "type": "boolean",
+                    "description": "Whether to use a custom git branch in this environment\n"
+                }
+            },
+            "requiredInputs": [
+                "dbtVersion",
+                "projectId",
+                "type"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering Environment resources.\n",
+                "properties": {
+                    "credentialId": {
+                        "type": "integer",
+                        "description": "Credential ID to create the environment with\n"
+                    },
+                    "customBranch": {
+                        "type": "string",
+                        "description": "Which custom branch to use in this environment\n"
+                    },
+                    "dbtVersion": {
+                        "type": "string",
+                        "description": "Version number of dbt to use in this environment\n"
+                    },
+                    "environmentId": {
+                        "type": "integer",
+                        "description": "Environment ID within the project\n"
+                    },
+                    "isActive": {
+                        "type": "boolean",
+                        "description": "Whether the environment is active\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Environment name\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID to create the environment in\n"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "The type of environment (must be either development or deployment)\n"
+                    },
+                    "useCustomBranch": {
+                        "type": "boolean",
+                        "description": "Whether to use a custom git branch in this environment\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/environmentVariable:EnvironmentVariable": {
+            "properties": {
+                "environmentValues": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "pulumi.json#/Any"
+                    },
+                    "description": "Map from environment names to respective variable value, a special key `project` should be set for the project default\nvariable value\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name for the variable, must be unique within a project, must be prefixed with 'DBT_'\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project for the variable to be created in\n"
+                }
+            },
+            "required": [
+                "environmentValues",
+                "name",
+                "projectId"
+            ],
+            "inputProperties": {
+                "environmentValues": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "pulumi.json#/Any"
+                    },
+                    "description": "Map from environment names to respective variable value, a special key `project` should be set for the project default\nvariable value\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name for the variable, must be unique within a project, must be prefixed with 'DBT_'\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project for the variable to be created in\n"
+                }
+            },
+            "requiredInputs": [
+                "environmentValues",
+                "projectId"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering EnvironmentVariable resources.\n",
+                "properties": {
+                    "environmentValues": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "pulumi.json#/Any"
+                        },
+                        "description": "Map from environment names to respective variable value, a special key `project` should be set for the project default\nvariable value\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name for the variable, must be unique within a project, must be prefixed with 'DBT_'\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project for the variable to be created in\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/group:Group": {
+            "properties": {
+                "assignByDefault": {
+                    "type": "boolean",
+                    "description": "Whether or not to assign this group to users by default\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the group is active\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Group name\n"
+                },
+                "ssoMappingGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "SSO mapping group names for this group\n"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "inputProperties": {
+                "assignByDefault": {
+                    "type": "boolean",
+                    "description": "Whether or not to assign this group to users by default\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the group is active\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Group name\n"
+                },
+                "ssoMappingGroups": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "SSO mapping group names for this group\n"
+                }
+            },
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering Group resources.\n",
+                "properties": {
+                    "assignByDefault": {
+                        "type": "boolean",
+                        "description": "Whether or not to assign this group to users by default\n"
+                    },
+                    "isActive": {
+                        "type": "boolean",
+                        "description": "Whether the group is active\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Group name\n"
+                    },
+                    "ssoMappingGroups": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "SSO mapping group names for this group\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/job:Job": {
+            "properties": {
+                "dbtVersion": {
+                    "type": "string",
+                    "description": "Version number of DBT to use in this job\n"
+                },
+                "deferringJobId": {
+                    "type": "integer",
+                    "description": "Job identifier that this job defers to\n"
+                },
+                "environmentId": {
+                    "type": "integer",
+                    "description": "Environment ID to create the job in\n"
+                },
+                "executeSteps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of commands to execute for the job\n"
+                },
+                "generateDocs": {
+                    "type": "boolean",
+                    "description": "Flag for whether the job should generate documentation\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Flag for whether the job is marked active or deleted\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Job name\n"
+                },
+                "numThreads": {
+                    "type": "integer",
+                    "description": "Number of threads to use in the job\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the job in\n"
+                },
+                "runGenerateSources": {
+                    "type": "boolean",
+                    "description": "Flag for whether the job should run generate sources\n"
+                },
+                "scheduleCron": {
+                    "type": "string",
+                    "description": "Custom cron expression for schedule\n"
+                },
+                "scheduleDays": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "description": "List of days of week as numbers (0 = Sunday, 7 = Saturday) to execute the job at if running on a schedule\n"
+                },
+                "scheduleHours": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "description": "List of hours to execute the job at if running on a schedule\n"
+                },
+                "scheduleInterval": {
+                    "type": "integer",
+                    "description": "Number of hours between job executions if running on a schedule\n"
+                },
+                "scheduleType": {
+                    "type": "string",
+                    "description": "Type of schedule to use, one of every_day/ days_of_week/ custom_cron\n"
+                },
+                "selfDeferring": {
+                    "type": "boolean",
+                    "description": "Whether this job defers on a previous run of itself\n"
+                },
+                "targetName": {
+                    "type": "string",
+                    "description": "Target name for the DBT profile\n"
+                },
+                "timeoutSeconds": {
+                    "type": "integer",
+                    "description": "Number of seconds to allow the job to run before timing out\n"
+                },
+                "triggers": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "boolean"
+                    },
+                    "description": "Flags for which types of triggers to use, keys of github_webhook, git_provider_webhook, schedule, custom_branch_only\n"
+                }
+            },
+            "required": [
+                "environmentId",
+                "executeSteps",
+                "name",
+                "projectId",
+                "triggers"
+            ],
+            "inputProperties": {
+                "dbtVersion": {
+                    "type": "string",
+                    "description": "Version number of DBT to use in this job\n"
+                },
+                "deferringJobId": {
+                    "type": "integer",
+                    "description": "Job identifier that this job defers to\n"
+                },
+                "environmentId": {
+                    "type": "integer",
+                    "description": "Environment ID to create the job in\n"
+                },
+                "executeSteps": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of commands to execute for the job\n"
+                },
+                "generateDocs": {
+                    "type": "boolean",
+                    "description": "Flag for whether the job should generate documentation\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Flag for whether the job is marked active or deleted\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Job name\n"
+                },
+                "numThreads": {
+                    "type": "integer",
+                    "description": "Number of threads to use in the job\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the job in\n"
+                },
+                "runGenerateSources": {
+                    "type": "boolean",
+                    "description": "Flag for whether the job should run generate sources\n"
+                },
+                "scheduleCron": {
+                    "type": "string",
+                    "description": "Custom cron expression for schedule\n"
+                },
+                "scheduleDays": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "description": "List of days of week as numbers (0 = Sunday, 7 = Saturday) to execute the job at if running on a schedule\n"
+                },
+                "scheduleHours": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "description": "List of hours to execute the job at if running on a schedule\n"
+                },
+                "scheduleInterval": {
+                    "type": "integer",
+                    "description": "Number of hours between job executions if running on a schedule\n"
+                },
+                "scheduleType": {
+                    "type": "string",
+                    "description": "Type of schedule to use, one of every_day/ days_of_week/ custom_cron\n"
+                },
+                "selfDeferring": {
+                    "type": "boolean",
+                    "description": "Whether this job defers on a previous run of itself\n"
+                },
+                "targetName": {
+                    "type": "string",
+                    "description": "Target name for the DBT profile\n"
+                },
+                "timeoutSeconds": {
+                    "type": "integer",
+                    "description": "Number of seconds to allow the job to run before timing out\n"
+                },
+                "triggers": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "boolean"
+                    },
+                    "description": "Flags for which types of triggers to use, keys of github_webhook, git_provider_webhook, schedule, custom_branch_only\n"
+                }
+            },
+            "requiredInputs": [
+                "environmentId",
+                "executeSteps",
+                "projectId",
+                "triggers"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering Job resources.\n",
+                "properties": {
+                    "dbtVersion": {
+                        "type": "string",
+                        "description": "Version number of DBT to use in this job\n"
+                    },
+                    "deferringJobId": {
+                        "type": "integer",
+                        "description": "Job identifier that this job defers to\n"
+                    },
+                    "environmentId": {
+                        "type": "integer",
+                        "description": "Environment ID to create the job in\n"
+                    },
+                    "executeSteps": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of commands to execute for the job\n"
+                    },
+                    "generateDocs": {
+                        "type": "boolean",
+                        "description": "Flag for whether the job should generate documentation\n"
+                    },
+                    "isActive": {
+                        "type": "boolean",
+                        "description": "Flag for whether the job is marked active or deleted\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Job name\n"
+                    },
+                    "numThreads": {
+                        "type": "integer",
+                        "description": "Number of threads to use in the job\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID to create the job in\n"
+                    },
+                    "runGenerateSources": {
+                        "type": "boolean",
+                        "description": "Flag for whether the job should run generate sources\n"
+                    },
+                    "scheduleCron": {
+                        "type": "string",
+                        "description": "Custom cron expression for schedule\n"
+                    },
+                    "scheduleDays": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        },
+                        "description": "List of days of week as numbers (0 = Sunday, 7 = Saturday) to execute the job at if running on a schedule\n"
+                    },
+                    "scheduleHours": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        },
+                        "description": "List of hours to execute the job at if running on a schedule\n"
+                    },
+                    "scheduleInterval": {
+                        "type": "integer",
+                        "description": "Number of hours between job executions if running on a schedule\n"
+                    },
+                    "scheduleType": {
+                        "type": "string",
+                        "description": "Type of schedule to use, one of every_day/ days_of_week/ custom_cron\n"
+                    },
+                    "selfDeferring": {
+                        "type": "boolean",
+                        "description": "Whether this job defers on a previous run of itself\n"
+                    },
+                    "targetName": {
+                        "type": "string",
+                        "description": "Target name for the DBT profile\n"
+                    },
+                    "timeoutSeconds": {
+                        "type": "integer",
+                        "description": "Number of seconds to allow the job to run before timing out\n"
+                    },
+                    "triggers": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "boolean"
+                        },
+                        "description": "Flags for which types of triggers to use, keys of github_webhook, git_provider_webhook, schedule, custom_branch_only\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/project:Project": {
+            "properties": {
+                "dbtProjectSubdirectory": {
+                    "type": "string",
+                    "description": "DBT project subdirectory path\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Project name\n"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "inputProperties": {
+                "dbtProjectSubdirectory": {
+                    "type": "string",
+                    "description": "DBT project subdirectory path\n"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Project name\n"
+                }
+            },
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering Project resources.\n",
+                "properties": {
+                    "dbtProjectSubdirectory": {
+                        "type": "string",
+                        "description": "DBT project subdirectory path\n"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Project name\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/projectConnection:ProjectConnection": {
+            "properties": {
+                "connectionId": {
+                    "type": "integer",
+                    "description": "Connection ID\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID\n"
+                }
+            },
+            "required": [
+                "connectionId",
+                "projectId"
+            ],
+            "inputProperties": {
+                "connectionId": {
+                    "type": "integer",
+                    "description": "Connection ID\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID\n"
+                }
+            },
+            "requiredInputs": [
+                "connectionId",
+                "projectId"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering ProjectConnection resources.\n",
+                "properties": {
+                    "connectionId": {
+                        "type": "integer",
+                        "description": "Connection ID\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/projectRepository:ProjectRepository": {
+            "properties": {
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID\n"
+                },
+                "repositoryId": {
+                    "type": "integer",
+                    "description": "Repository ID\n"
+                }
+            },
+            "required": [
+                "projectId",
+                "repositoryId"
+            ],
+            "inputProperties": {
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID\n"
+                },
+                "repositoryId": {
+                    "type": "integer",
+                    "description": "Repository ID\n"
+                }
+            },
+            "requiredInputs": [
+                "projectId",
+                "repositoryId"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering ProjectRepository resources.\n",
+                "properties": {
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID\n"
+                    },
+                    "repositoryId": {
+                        "type": "integer",
+                        "description": "Repository ID\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/repository:Repository": {
+            "properties": {
+                "deployKey": {
+                    "type": "string",
+                    "description": "Public key generated by DBT when using `deploy_key` clone strategy\n"
+                },
+                "fetchDeployKey": {
+                    "type": "boolean",
+                    "description": "Whether we should return the public deploy key\n"
+                },
+                "gitCloneStrategy": {
+                    "type": "string",
+                    "description": "Git clone strategy for the repository\n"
+                },
+                "gitlabProjectId": {
+                    "type": "integer",
+                    "description": "Identifier for the Gitlab project\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the repository is active\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the repository in\n"
+                },
+                "remoteUrl": {
+                    "type": "string",
+                    "description": "Git URL for the repository or \u003cGroup\u003e/\u003cProject\u003e for Gitlab\n"
+                },
+                "repositoryCredentialsId": {
+                    "type": "integer",
+                    "description": "Credentials ID for the repository (From the repository side not the DBT Cloud ID)\n"
+                },
+                "repositoryId": {
+                    "type": "integer",
+                    "description": "Repository Identifier\n"
+                }
+            },
+            "required": [
+                "deployKey",
+                "projectId",
+                "remoteUrl",
+                "repositoryId"
+            ],
+            "inputProperties": {
+                "fetchDeployKey": {
+                    "type": "boolean",
+                    "description": "Whether we should return the public deploy key\n"
+                },
+                "gitCloneStrategy": {
+                    "type": "string",
+                    "description": "Git clone strategy for the repository\n"
+                },
+                "gitlabProjectId": {
+                    "type": "integer",
+                    "description": "Identifier for the Gitlab project\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the repository is active\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the repository in\n"
+                },
+                "remoteUrl": {
+                    "type": "string",
+                    "description": "Git URL for the repository or \u003cGroup\u003e/\u003cProject\u003e for Gitlab\n"
+                },
+                "repositoryCredentialsId": {
+                    "type": "integer",
+                    "description": "Credentials ID for the repository (From the repository side not the DBT Cloud ID)\n"
+                }
+            },
+            "requiredInputs": [
+                "projectId",
+                "remoteUrl"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering Repository resources.\n",
+                "properties": {
+                    "deployKey": {
+                        "type": "string",
+                        "description": "Public key generated by DBT when using `deploy_key` clone strategy\n"
+                    },
+                    "fetchDeployKey": {
+                        "type": "boolean",
+                        "description": "Whether we should return the public deploy key\n"
+                    },
+                    "gitCloneStrategy": {
+                        "type": "string",
+                        "description": "Git clone strategy for the repository\n"
+                    },
+                    "gitlabProjectId": {
+                        "type": "integer",
+                        "description": "Identifier for the Gitlab project\n"
+                    },
+                    "isActive": {
+                        "type": "boolean",
+                        "description": "Whether the repository is active\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID to create the repository in\n"
+                    },
+                    "remoteUrl": {
+                        "type": "string",
+                        "description": "Git URL for the repository or \u003cGroup\u003e/\u003cProject\u003e for Gitlab\n"
+                    },
+                    "repositoryCredentialsId": {
+                        "type": "integer",
+                        "description": "Credentials ID for the repository (From the repository side not the DBT Cloud ID)\n"
+                    },
+                    "repositoryId": {
+                        "type": "integer",
+                        "description": "Repository Identifier\n"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "dbtcloud:index/snowflakeCredential:SnowflakeCredential": {
+            "properties": {
+                "authType": {
+                    "type": "string",
+                    "description": "The type of Snowflake credential ('password' or 'keypair')\n"
+                },
+                "credentialId": {
+                    "type": "integer",
+                    "description": "The system Snowflake credential ID\n"
+                },
+                "database": {
+                    "type": "string",
+                    "description": "Database to connect to\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the Snowflake credential is active\n"
+                },
+                "numThreads": {
+                    "type": "integer",
+                    "description": "Number of threads to use\n"
+                },
+                "password": {
+                    "type": "string",
+                    "description": "Password for Snowflake\n"
+                },
+                "privateKey": {
+                    "type": "string",
+                    "description": "Private key for Snowflake\n"
+                },
+                "privateKeyPassphrase": {
+                    "type": "string",
+                    "description": "Private key passphrase for Snowflake\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the Snowflake credential in\n"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role to assume\n"
+                },
+                "schema": {
+                    "type": "string",
+                    "description": "Default schema name\n"
+                },
+                "user": {
+                    "type": "string",
+                    "description": "Username for Snowflake\n"
+                },
+                "warehouse": {
+                    "type": "string",
+                    "description": "Warehouse to use\n"
+                }
+            },
+            "required": [
+                "authType",
+                "credentialId",
+                "numThreads",
+                "projectId",
+                "schema",
+                "user"
+            ],
+            "inputProperties": {
+                "authType": {
+                    "type": "string",
+                    "description": "The type of Snowflake credential ('password' or 'keypair')\n"
+                },
+                "database": {
+                    "type": "string",
+                    "description": "Database to connect to\n"
+                },
+                "isActive": {
+                    "type": "boolean",
+                    "description": "Whether the Snowflake credential is active\n"
+                },
+                "numThreads": {
+                    "type": "integer",
+                    "description": "Number of threads to use\n"
+                },
+                "password": {
+                    "type": "string",
+                    "description": "Password for Snowflake\n"
+                },
+                "privateKey": {
+                    "type": "string",
+                    "description": "Private key for Snowflake\n"
+                },
+                "privateKeyPassphrase": {
+                    "type": "string",
+                    "description": "Private key passphrase for Snowflake\n"
+                },
+                "projectId": {
+                    "type": "integer",
+                    "description": "Project ID to create the Snowflake credential in\n"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role to assume\n"
+                },
+                "schema": {
+                    "type": "string",
+                    "description": "Default schema name\n"
+                },
+                "user": {
+                    "type": "string",
+                    "description": "Username for Snowflake\n"
+                },
+                "warehouse": {
+                    "type": "string",
+                    "description": "Warehouse to use\n"
+                }
+            },
+            "requiredInputs": [
+                "authType",
+                "numThreads",
+                "projectId",
+                "schema",
+                "user"
+            ],
+            "stateInputs": {
+                "description": "Input properties used for looking up and filtering SnowflakeCredential resources.\n",
+                "properties": {
+                    "authType": {
+                        "type": "string",
+                        "description": "The type of Snowflake credential ('password' or 'keypair')\n"
+                    },
+                    "credentialId": {
+                        "type": "integer",
+                        "description": "The system Snowflake credential ID\n"
+                    },
+                    "database": {
+                        "type": "string",
+                        "description": "Database to connect to\n"
+                    },
+                    "isActive": {
+                        "type": "boolean",
+                        "description": "Whether the Snowflake credential is active\n"
+                    },
+                    "numThreads": {
+                        "type": "integer",
+                        "description": "Number of threads to use\n"
+                    },
+                    "password": {
+                        "type": "string",
+                        "description": "Password for Snowflake\n"
+                    },
+                    "privateKey": {
+                        "type": "string",
+                        "description": "Private key for Snowflake\n"
+                    },
+                    "privateKeyPassphrase": {
+                        "type": "string",
+                        "description": "Private key passphrase for Snowflake\n"
+                    },
+                    "projectId": {
+                        "type": "integer",
+                        "description": "Project ID to create the Snowflake credential in\n"
+                    },
+                    "role": {
+                        "type": "string",
+                        "description": "Role to assume\n"
+                    },
+                    "schema": {
+                        "type": "string",
+                        "description": "Default schema name\n"
+                    },
+                    "user": {
+                        "type": "string",
+                        "description": "Username for Snowflake\n"
+                    },
+                    "warehouse": {
+                        "type": "string",
+                        "description": "Warehouse to use\n"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "functions": {
+        "dbtcloud:index/getConnection:getConnection": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getConnection.\n",
+                "properties": {
+                    "connectionId": {
+                        "type": "integer"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "connectionId",
+                    "projectId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getConnection.\n",
+                "properties": {
+                    "account": {
+                        "type": "string"
+                    },
+                    "allowKeepAlive": {
+                        "type": "boolean"
+                    },
+                    "allowSso": {
+                        "type": "boolean"
+                    },
+                    "connectionId": {
+                        "type": "integer"
+                    },
+                    "database": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "role": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "warehouse": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "account",
+                    "allowKeepAlive",
+                    "allowSso",
+                    "connectionId",
+                    "database",
+                    "isActive",
+                    "name",
+                    "projectId",
+                    "role",
+                    "type",
+                    "warehouse",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getEnvironment:getEnvironment": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getEnvironment.\n",
+                "properties": {
+                    "environmentId": {
+                        "type": "integer"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "environmentId",
+                    "projectId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getEnvironment.\n",
+                "properties": {
+                    "credentialId": {
+                        "type": "integer"
+                    },
+                    "customBranch": {
+                        "type": "string"
+                    },
+                    "dbtVersion": {
+                        "type": "string"
+                    },
+                    "environmentId": {
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "useCustomBranch": {
+                        "type": "boolean"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "credentialId",
+                    "customBranch",
+                    "dbtVersion",
+                    "environmentId",
+                    "isActive",
+                    "name",
+                    "projectId",
+                    "type",
+                    "useCustomBranch",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getEnvironmentVariable:getEnvironmentVariable": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getEnvironmentVariable.\n",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "name",
+                    "projectId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getEnvironmentVariable.\n",
+                "properties": {
+                    "environmentValues": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "pulumi.json#/Any"
+                        }
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "environmentValues",
+                    "name",
+                    "projectId",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getGroup:getGroup": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getGroup.\n",
+                "properties": {
+                    "groupId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "groupId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getGroup.\n",
+                "properties": {
+                    "assignByDefault": {
+                        "type": "boolean"
+                    },
+                    "groupId": {
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "ssoMappingGroups": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "assignByDefault",
+                    "groupId",
+                    "isActive",
+                    "name",
+                    "ssoMappingGroups",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getJob:getJob": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getJob.\n",
+                "properties": {
+                    "jobId": {
+                        "type": "integer"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "jobId",
+                    "projectId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getJob.\n",
+                "properties": {
+                    "deferringJobId": {
+                        "type": "integer"
+                    },
+                    "environmentId": {
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "jobId": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "selfDeferring": {
+                        "type": "boolean"
+                    },
+                    "timeoutSeconds": {
+                        "type": "integer"
+                    },
+                    "triggers": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "deferringJobId",
+                    "environmentId",
+                    "jobId",
+                    "name",
+                    "projectId",
+                    "selfDeferring",
+                    "timeoutSeconds",
+                    "triggers",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getProject:getProject": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getProject.\n",
+                "properties": {
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "projectId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getProject.\n",
+                "properties": {
+                    "connectionId": {
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "repositoryId": {
+                        "type": "integer"
+                    },
+                    "state": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "connectionId",
+                    "name",
+                    "projectId",
+                    "repositoryId",
+                    "state",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getRepository:getRepository": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getRepository.\n",
+                "properties": {
+                    "fetchDeployKey": {
+                        "type": "boolean"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "repositoryId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "projectId",
+                    "repositoryId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getRepository.\n",
+                "properties": {
+                    "deployKey": {
+                        "type": "string"
+                    },
+                    "fetchDeployKey": {
+                        "type": "boolean"
+                    },
+                    "gitCloneStrategy": {
+                        "type": "string"
+                    },
+                    "gitlabProjectId": {
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "remoteUrl": {
+                        "type": "string"
+                    },
+                    "repositoryCredentialsId": {
+                        "type": "integer"
+                    },
+                    "repositoryId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "deployKey",
+                    "gitCloneStrategy",
+                    "gitlabProjectId",
+                    "isActive",
+                    "projectId",
+                    "remoteUrl",
+                    "repositoryCredentialsId",
+                    "repositoryId",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getSnowflakeCredential:getSnowflakeCredential": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getSnowflakeCredential.\n",
+                "properties": {
+                    "credentialId": {
+                        "type": "integer"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "credentialId",
+                    "projectId"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getSnowflakeCredential.\n",
+                "properties": {
+                    "authType": {
+                        "type": "string"
+                    },
+                    "credentialId": {
+                        "type": "integer"
+                    },
+                    "id": {
+                        "type": "string",
+                        "description": "The provider-assigned unique ID for this managed resource.\n"
+                    },
+                    "isActive": {
+                        "type": "boolean"
+                    },
+                    "numThreads": {
+                        "type": "integer"
+                    },
+                    "projectId": {
+                        "type": "integer"
+                    },
+                    "schema": {
+                        "type": "string"
+                    },
+                    "user": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "authType",
+                    "credentialId",
+                    "isActive",
+                    "numThreads",
+                    "projectId",
+                    "schema",
+                    "user",
+                    "id"
+                ]
+            }
+        },
+        "dbtcloud:index/getUser:getUser": {
+            "inputs": {
+                "description": "A collection of arguments for invoking getUser.\n",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "email"
+                ]
+            },
+            "outputs": {
+                "description": "A collection of values returned by getUser.\n",
+                "properties": {
+                    "email": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "email",
+                    "id"
+                ]
+            }
+        }
     }
 }

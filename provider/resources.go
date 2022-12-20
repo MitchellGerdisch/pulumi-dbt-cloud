@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"path/filepath"
 
+	"github.com/MitchellGerdisch/pulumi-dbt-cloud/provider/pkg/version"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 	shim "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim"
 	shimv2 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v2"
-	"github.com/MitchellGerdisch/pulumi-dbt-cloud/provider/pkg/version"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/resource"
 	// "github.com/terraform-providers/terraform-provider-dbt-cloud/dbt-cloud"
 	// "github.com/gthesheep/terraform-provider-dbt-cloud"
@@ -94,7 +94,18 @@ func Provider() tfbridge.ProviderInfo {
 			// },
 		},
 		PreConfigureCallback: preConfigureCallback,
-		Resources:            map[string]*tfbridge.ResourceInfo{
+		Resources: map[string]*tfbridge.ResourceInfo{
+			"dbt_cloud_connection":            {Tok: tfbridge.MakeResource(mainPkg, mainMod, "Connection")},
+			"dbt_cloud_databricks_credential": {Tok: tfbridge.MakeResource(mainPkg, mainMod, "DatabricksCredential")},
+			"dbt_cloud_environment":           {Tok: tfbridge.MakeResource(mainPkg, mainMod, "Environment")},
+			"dbt_cloud_environment_variable":  {Tok: tfbridge.MakeResource(mainPkg, mainMod, "EnvironmentVariable")},
+			"dbt_cloud_group":                 {Tok: tfbridge.MakeResource(mainPkg, mainMod, "Group")},
+			"dbt_cloud_job":                   {Tok: tfbridge.MakeResource(mainPkg, mainMod, "Job")},
+			"dbt_cloud_project":               {Tok: tfbridge.MakeResource(mainPkg, mainMod, "Project")},
+			"dbt_cloud_project_connection":    {Tok: tfbridge.MakeResource(mainPkg, mainMod, "ProjectConnection")},
+			"dbt_cloud_project_repository":    {Tok: tfbridge.MakeResource(mainPkg, mainMod, "ProjectRepository")},
+			"dbt_cloud_repository":            {Tok: tfbridge.MakeResource(mainPkg, mainMod, "Repository")},
+			"dbt_cloud_snowflake_credential":  {Tok: tfbridge.MakeResource(mainPkg, mainMod, "SnowflakeCredential")},
 			// Map each resource in the Terraform provider to a Pulumi type. Two examples
 			// are below - the single line form is the common case. The multi-line form is
 			// needed only if you wish to override types or other default options.
@@ -112,6 +123,15 @@ func Provider() tfbridge.ProviderInfo {
 			// Map each resource in the Terraform provider to a Pulumi function. An example
 			// is below.
 			// "aws_ami": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getAmi")},
+			"dbt_cloud_connection":           {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getConnection")},
+			"dbt_cloud_environment":          {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getEnvironment")},
+			"dbt_cloud_environment_variable": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getEnvironmentVariable")},
+			"dbt_cloud_group":                {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getGroup")},
+			"dbt_cloud_job":                  {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getJob")},
+			"dbt_cloud_project":              {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getProject")},
+			"dbt_cloud_repository":           {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getRepository")},
+			"dbt_cloud_snowflake_credential": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getSnowflakeCredential")},
+			"dbt_cloud_user":                 {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getUser")},
 		},
 		JavaScript: &tfbridge.JavaScriptInfo{
 			// List any npm dependencies and their versions

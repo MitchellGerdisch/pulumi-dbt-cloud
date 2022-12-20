@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "outDir": "bin",
+        "target": "es2016",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "sourceMap": true,
+        "stripInternal": true,
+        "experimentalDecorators": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true
+    },
+    "files": [
+        "config/index.ts",
+        "config/vars.ts",
+        "connection.ts",
+        "databricksCredential.ts",
+        "environment.ts",
+        "environmentVariable.ts",
+        "getConnection.ts",
+        "getEnvironment.ts",
+        "getEnvironmentVariable.ts",
+        "getGroup.ts",
+        "getJob.ts",
+        "getProject.ts",
+        "getRepository.ts",
+        "getSnowflakeCredential.ts",
+        "getUser.ts",
+        "group.ts",
+        "index.ts",
+        "job.ts",
+        "project.ts",
+        "projectConnection.ts",
+        "projectRepository.ts",
+        "provider.ts",
+        "repository.ts",
+        "snowflakeCredential.ts",
+        "utilities.ts"
+    ]
+}
