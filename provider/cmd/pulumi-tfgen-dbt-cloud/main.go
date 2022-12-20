@@ -16,11 +16,11 @@ package main
 
 import (
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfgen"
-	xyz "github.com/pulumi/pulumi-xyz/provider"
-	"github.com/pulumi/pulumi-xyz/provider/pkg/version"
+	dbtcloud "github.com/MitchellGerdisch/pulumi-dbt-cloud/provider"
+	"github.com/MitchellGerdisch/pulumi-dbt-cloud/provider/pkg/version"
 )
 
 func main() {
 	// Modify the path to point to the new provider
-	tfgen.Main("xyz", version.Version, xyz.Provider())
+	tfgen.Main("dbtcloud", version.Version, dbtcloud.Provider())
 }
