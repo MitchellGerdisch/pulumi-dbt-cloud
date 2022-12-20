@@ -79,10 +79,10 @@ func Provider() tfbridge.ProviderInfo {
 		Keywords:   []string{"pulumi", "dbt-cloud", "category/cloud"},
 		License:    "Apache-2.0",
 		Homepage:   "https://www.pulumi.com",
-		Repository: "https://github.com/pulumi/pulumi-dbt-cloud",
+		Repository: "https://github.com/MitchellGerdisch/pulumi-dbt-cloud",
 		// The GitHub Org for the provider - defaults to `terraform-providers`. Note that this
 		// should match the TF provider module's require directive, not any replace directives.
-		GitHubOrg: "",
+		GitHubOrg: "gthesheep",
 		Config:    map[string]*tfbridge.SchemaInfo{
 			// Add any required configuration here, or remove the example below if
 			// no additional points are required.

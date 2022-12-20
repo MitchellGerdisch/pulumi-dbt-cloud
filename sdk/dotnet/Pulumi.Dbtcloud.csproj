@@ -7,7 +7,7 @@
     <Description>A Pulumi package for creating and managing dbt-cloud cloud resources.</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://www.pulumi.com</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/pulumi/pulumi-dbt-cloud</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MitchellGerdisch/pulumi-dbt-cloud</RepositoryUrl>
     <PackageIcon>logo.png</PackageIcon>
 
     <TargetFramework>netcoreapp3.1</TargetFramework>
